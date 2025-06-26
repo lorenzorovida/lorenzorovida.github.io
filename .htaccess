@@ -1,0 +1,5 @@
+<IfModule mod_headers.c>
+  <FilesMatch "\.(png|pdf)$">
+    Header set X-Robots-Tag "noindex, noarchive, nosnippet"
+  </FilesMatch>
+</IfModule>

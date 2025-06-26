@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<head>
+  <!-- CSS di Bootstrap -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorenzo Rovida</title>
+    <style>
+      
+      .space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11pt;
+  letter-spacing: -0.3px;
+  line-height: 1.35;
+
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.space-tiny {
+  font-family: "Space Mono", monospace;
+  font-weight: 300;
+  font-size: 6pt;
+}
+
+.carousel-img {
+  width: 100%;
+  margin: 0 auto;      /* centra l'immagine nel carosello */
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .carousel-img {
+    width: 75%;
+  }
+}
+
+.box {
+            width: 90%; /* Usa una percentuale per adattarsi agli schermi piccoli */
+            max-width: 800px; /* Non supera mai i 500px */
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 35px;
+            background-color: #f6f6f6;
+            text-align: left;
+            border-radius: 0px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+
+@media (max-width: 600px) {
+    .box {
+        padding: 10px;
+    }
+}
+
+ .carousel-indicators {
+  position: static;       /* Rimuove il posizionamento assoluto */
+  justify-content: center;
+}
+.carousel-indicators button {
+  background-color: #222222 !important; /* forza il rosso */
+  opacity: 0.2;                     /* non attivo = trasparente */
+  width: 10px;
+  height: 4.5px !important;;
+  border: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  opacity: 0.2; /* Indicatori inattivi */
+  transition: opacity 0.2s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1; /* Indicatore attivo */
+  
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+  }
+div.ui-menu li {
+    
+
+}
+ul
+{
+list-style-type: none;
+list-style-position: inside;
+    padding:10px;
+    margin:0px;
+}
+li
+{
+   padding: 12px;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0;
+ font-family: "Space Mono", monospace;         /* font serif di base */}
+h3 {
+  font-size: 1.17em;          /* un po’ più piccolo di h2 */
+  font-weight: bold;          /* grassetto */
+  margin: 1em 0;              /* margine verticale standard */
+  font-family: "Space Mono", monospace;         /* font serif di base */
+  line-height: 1.3;           /* altezza riga comoda */
+}
+
+h4 {
+  font-size: 1em;             /* leggermente più piccolo di h3 */
+  font-weight: bold;          /* grassetto */
+  margin: 1.33em 0;           /* margini verticali tipici */
+  font-family: "Space Mono", monospace;         /* font serif classico */
+  line-height: 1.3;           /* altezza riga comoda */
+  margin-bottom: 5px;
+}
+
+a.no-style {
+    all: unset; /* removes all inherited styles */
+    cursor: pointer; /* optional: make it look clickable */
+  }
+
+.contenitore {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      align-items: flex-start; /* 🔝 Allinea in alto */
+    }
+
+    @media (max-width: 600px) {
+  .contenitore {
+    flex-direction: column;
+    align-items: stretch; /* Allinea a tutta larghezza */
+  }
+}
+
+ @media (max-width: 600px) {
+  .destra {
+    padding-top: 20px;
+  }
+}
+    .sinistra {
+      /* elementi a sinistra */
+    }
+    .destra {
+      /* elementi a destra */
+    }
+
+</style>
+</head>
+<body class="space-mono-regular">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="box">
+      
+<div class="contenitore">
+ <div class="sinistra">
+   <nav>
+  <a href="#bio">bio</a> |
+  <a href="#publications">publications</a> | 
+  <a href="#talks">talks</a>
+  <!--<a href="#cv">cv</a>-->
+</nav>
+<h2>Lorenzo Rovida</h2>
+  <div class="icon-list">
+    <div><i class="fas fa-book fa-fw" style="color: black; font-size:11px"></i> Ph.D. student in cryptography</div>
+    <div><i class="fas fa-home fa-fw" style="color: black; font-size:11px"></i> University of Milano-Bicocca</div>
+    <div><i class="fas fa-envelope fa-fw" style="color: black; font-size:11px"></i> name.surname @ {unimib.outlook}.it</div>
+  </div>
+  </div>
+   
+    <div class="destra">
+      <img src="pic.png" style="width: 200px; height: 155px; object-fit: cover; object-position: center; display: block; border: 5px solid #ddd;" alt="Myself">
+    </div>
+  </div>
+<br>
+
+<hr>
+<h3 id="bio">Bio</h3>
+<i>Hi! My name is</i> Lorenzo and I am currently a final-year PhD student in the Computer Science department at the University of Milano-Bicocca, 
+in Italy, where I am supervised by Alberto Leporati.
+<br><br>
+My primary research fields are (fully) <b>homomorphic encryption</b> (FHE) and <b>lattice-based cryptography</b>.
+I like to work from both an algorithmic point of view — i.e., algoritms based on FHE, from sorting to machine learning — and a construction point of view — i.e., constructions of FHE schemes using lattices.
+<br><br>
+During my Ph.D.,  I have been extremely lucky to be hosted by cool people: Wessel van Woerden at the <a href="https://www.math.u-bordeaux.fr/fr/" class="no-style">Institut de Mathématiques de Bordeaux</a>, and Frederik Vercatureren at <a href="https://www.esat.kuleuven.be/cosic/" class="no-style">COSIC, KU Leuven</a>.
+<br>
+<!--
+<br>
+<center>
+<div data-bs-theme="dark" id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="comic/1.png" class="carousel-img" alt="Comic 1" width="80">
+    </div>
+    <div class="carousel-item">
+      <img src="comic/1.png" class="carousel-img" alt="Comic 2" width="80">
+    </div>
+    <div class="carousel-item">
+      <img src="comic/1.png" class="carousel-img" alt="..." width="80">
+    </div>
+  </div>
+    <div class="carousel-indicators mt-3">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<p style="font-size: 10pt;">Fig.1: Alice and Bob sending love messages to each other</p>
+</center>
+-->
+<br>
+<hr>
+<h3 id="publications">Publications</h3> <p style="font-size: 9pt">(updated 23th June, 2025)</p>
+<h4>2025</h4>
+<ul>
+  <li><b>Beyond LWE: a Lattice Framework for Homomorphic Encryption</b> 
+  <br>A. Leporati, L. Rovida and W. van Woerden
+  <br><i>Preprint</i> 
+  <br>(<a href="https://ia.cr/2025/1171">ePrint 2025/1171</a>, <a href="papers/2025_beyondlwe.pdf">pdf</a>)</li>
+  
+  <li><b>Lightweight Sorting in Approximate Homomorphic Encryption</b>
+  <br>L. Rovida, A. Leporati and S. Basile 
+  <br><i>Preprint</i> 
+  <br>(<a href="https://ia.cr/2025/1150">ePrint 2025/1150</a>, <a href="papers/2025_fhesorting.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/Lightweight-Sorting-In-Approximate-Homomorphic-Encryption">code</a>, <a href="slides/2025_fhesorting_slides.pdf">slides</a> + <a href="https://www.youtube.com/watch?v=ea066flbddU&t=41s">video</a> from a COSIC Seminar)</li>
+  
+  <li><b>An Evolutionary Approach to the Design of Spiking Neural P Circuits</b> 
+  <br>A. Leporati and L. Rovida
+  <br><i>Journal of Membrane Computing</i>
+  <br> (<a href="https://doi.springer.com/article/10.1007/s41965-024-00180-x">doi</a>, <a href="papers/2025_evolutionary.pdf">pdf</a>, <a href="https://github.com/alepo42/Spiking-Neural-Evolution">code</a>)</li>
+  
+  <li><b>Looking for Stability in Proof-of-Stake based Consensus Mechanisms</b>
+  <br>A. Leporati and L. Rovida
+  <br><i>Blockchain: Research and Applications</i>
+  <br> (<a href="https://doi.org/10.1016/j.bcra.2024.100222">doi</a>, <a href="papers/2025_stabilitypos.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/PoS-Simulator">code</a>)</li>
+</ul>
+<h4>2024</h4>
+<ul>
+  <li><b>Transformer-based Language Models and Homomorphic Encryption: An Intersection with BERT-tiny</b>
+  <br>L. Rovida and A. Leporati, 
+  <br><i>10th ACM International Workshop on Security and Privacy Analytics</i>
+  <br>(<a href="https://doi.org/10.1145/3643651.3659893">doi</a>, <a href="papers/2024_fhebert.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/FHE-BERT-Tiny">code</a>) + (<a href="slides/2024_fhebert_slides.pdf">slides</a> used at <a href="https://sites.google.com/view/iwspa-2024/?pli=1">IWSPA '24</a> workshop at ACM CODASPY '24) </li>
+ 
+  <li><b>Encrypted Image Classification with Low Memory Footprint Using Fully Homomorphic Encryption</b>
+  <br>L. Rovida and A. Leporati
+  <br><i>International Journal of Neural Systems</i>
+  <br> (<a href="https://ia.cr/2024/460">ePrint 2024/460</a>, <a href="https://doi.org/10.1142/S0129065724500254">doi</a>, <a href="papers/2024_fheresnet.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/LowMemoryFHEResNet20">code</a>) + (<a href="slides/2024_fheresnet_slides.pdf">slides</a> used at <a href="https://aicrypt2024.aisylab.com">AICrypt '24</a> workshop at EUROCRYPT '24) </li>
+</ul>
+<h4>2023</h4>
+<ul>
+    <li><b>Fast but Approximate Homomorphic k-means Based on Masking Technique</b>
+    <br>L. Rovida
+    <br><i>International Journal of Information Security </i>
+    <br>(<a href="https://doi.org/10.1007/s10207-023-00708-9">doi</a>, <a href="papers/2023_fhekmeans.pdf">pdf</a>) + (<a href="slides/2023_fhekmeans_slides.pdf">slides</a> used at <a href="https://aicrypt2023.aisylab.com">AICrypt '23</a> workshop at EUROCRYPT '24)  </li>
+</ul>
+<h4>2020</h4>
+<ul>
+    <li><b>MaREA4Galaxy: Metabolic REaction Enrichment Analysis and Visualization of RNA-seq data within Galaxy</b>
+    <br>C. Damiani, L. Rovida, D. Maspero, I. Sala, L. Rosato, M. Di Filippo, D. Pescini, A. Graudenzi, M. Antoniotti, and G. Mauri
+    <br><i>Computational and Structural Biotechnology Journal</i>
+    <br>(<a href="https://doi.org/10.1016/j.csbj.2020.04.008">doi</a>, <a href="papers/2020_marea4galaxy.pdf">pdf</a>)</li>
+</ul>
+
+<br>
+<hr>
+<h3 id="talks">Talks</h3>
+<h4>2025</h4>
+<ul style="list-style:initial; list-style-position: inside;
+    padding:10px;
+    margin:0px;
+">
+    <li>June, 17th @ COSIC, KU Leuven - Lightweight Sorting in Approximate Homomorphic Encryption (<a href="slides/2025_fhesorting_slides.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=ea066flbddU&t=41s">video</a>)</li>
+</ul>
+<hr>
+<!---
+<h3 id="cv">CV</h3>
+You can find my CV, updated on 20th, June 2025, <a href="CV.pdf">here</a>.
+<br>
+<br>
+<hr>
+-->
+<h3>Contacts</h3>
+Feel free to contact me at my email address, listed on top of this page.
+</div>
+<br>
+<br>
+</body>
+</html>
