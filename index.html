@@ -11,7 +11,17 @@
     <meta name="description" content="Hi! My name is Lorenzo Rovida and I am a Ph.D. student in cryptography, working in the fields of FHE and lattice-based cryptography."/>
     <title>Lorenzo Rovida</title>
     <style>
-      
+     .highlight {
+    background-color: #ffe066;
+    border-left: 4px solid #fab005;
+    padding-left: 10px;
+    transition: background-color 0.8s ease, border-left 0.8s ease;
+  }
+
+  .highlight.fade-out {
+    background-color: transparent;
+    border-left: 4px solid transparent;
+  }
       .space-mono-regular {
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -20,6 +30,10 @@
   letter-spacing: -0.3px;
   line-height: 1.35;
 
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .space-mono-bold {
@@ -190,11 +204,54 @@ a.no-style {
   "description": "PhD student in cryptography working with FHE and lattice-based cryptography"
 }
 </script>
+
+<script>
+  window.addEventListener('hashchange', () => {
+    const id = window.location.hash.substring(1);
+    const target = document.getElementById(id);
+    if (target) {
+      target.classList.add('highlight');
+      setTimeout(() => {
+        target.classList.remove('highlight');
+      }, 2000); // evidenziazione dura 2 secondi
+    }
+  });
+</script>
 </head>
 <body class="space-mono-regular">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  function highlightTargetFromHash() {
+    const id = window.location.hash.substring(1);
+    if (!id) return;
+
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.classList.add('highlight');
+
+    // Avvia fade-out dopo 1 secondo
+    setTimeout(() => {
+      el.classList.add('fade-out');
+    }, 1000);
+
+    // Rimuove le classi dopo il fade
+    setTimeout(() => {
+      el.classList.remove('highlight', 'fade-out');
+    }, 2000);
+  }
+
+  // Esegui subito se già c'è un hash (es. con ricarica)
+  window.addEventListener('load', highlightTargetFromHash);
+
+  // Esegui ogni volta che cambia l'hash (clic su link)
+  window.addEventListener('hashchange', highlightTargetFromHash);
+</script>
+
     <div class="box">
       
+
 <div class="contenitore">
  <div class="sinistra">
    <nav>
@@ -222,8 +279,8 @@ a.no-style {
 <i>Hi! My name is</i> Lorenzo and I am currently a final-year Ph.D. student in the Computer Science department at the University of Milano-Bicocca, 
 in Italy, where I am supervised by Alberto Leporati.
 <br><br>
-My primary research fields are (<b>fully</b>) <b>homomorphic encryption</b> (FHE) and <b>lattice-based cryptography</b>.
-I like to work on FHE from both an algorithmic point of view — i.e., designing encrypted circuits, from sorting to machine learning — and a construction point of view — i.e., constructions of FHE schemes using lattices.
+My primary research fields are <b>fully homomorphic encryption</b> (FHE) and <b>lattice-based cryptography</b>.
+I like to work on FHE from both an algorithmic point of view, like designing encrypted circuits (from sorting to machine learning) and a construction point of view, namely building FHE schemes using lattices.
 <br><br>
 During my Ph.D.,  I have been extremely lucky to be hosted by some cool people: Wessel van Woerden at the <a href="https://www.math.u-bordeaux.fr/fr/" class="no-style">Institut de Mathématiques de Bordeaux</a>, and Frederik Vercatureren at <a href="https://www.esat.kuleuven.be/cosic/" class="no-style">COSIC, KU Leuven</a>.
 <br>
@@ -329,7 +386,7 @@ During my Ph.D.,  I have been extremely lucky to be hosted by some cool people: 
   <br><i>Preprint</i> 
   <br>(<a href="https://ia.cr/2025/1171">ePrint 2025/1171</a>, <a href="papers/2025_beyondlwe.pdf">pdf</a>)</li>
   
-  <li><b>Lightweight Sorting in Approximate Homomorphic Encryption</b>
+  <li id="RLB25"><b>Lightweight Sorting in Approximate Homomorphic Encryption</b>
   <br>L. Rovida, A. Leporati and S. Basile 
   <br><i>Preprint</i> 
   <br>(<a href="https://ia.cr/2025/1150">ePrint 2025/1150</a>, <a href="papers/2025_fhesorting.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/Lightweight-Sorting-In-Approximate-Homomorphic-Encryption">code</a>, <a href="slides/2025_fhesorting_slides.pdf">slides</a> + <a href="https://www.youtube.com/watch?v=ea066flbddU&t=41s">video</a> from a COSIC Seminar)</li>
@@ -384,7 +441,7 @@ During my Ph.D.,  I have been extremely lucky to be hosted by some cool people: 
 
     <li>(Upcoming) Sept, 12th @ University of Roma Tre (TAC25) - <i><a class="no-style" href="https://aleph.fbk.eu/events/TAC2025/">Exploring blind signatures under FHE by combining GBFV and HAWK</a></i> (<a href="abstracts/2025_blindsignatures.pdf">abstract</a>, slides <i>WIP</i>)</li>
 
-    <li>June, 17th @ COSIC, KU Leuven - <i><a class="no-style" href="https://www.esat.kuleuven.be/cosic/cosicevent/cosic-seminar-towards-lightweight-sorting-in-approximate-homomorphic-encryption-lorenzo-rovida-university-of-milano-bicocca/">Lightweight Sorting in Approximate Homomorphic Encryption</a></i> (<a href="slides/2025_fhesorting_slides.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=ea066flbddU&t=41s">video</a>)</li>
+    <li>June, 17th @ COSIC, KU Leuven - <i><a class="no-style" href="https://www.esat.kuleuven.be/cosic/cosicevent/cosic-seminar-towards-lightweight-sorting-in-approximate-homomorphic-encryption-lorenzo-rovida-university-of-milano-bicocca/">Lightweight Sorting in Approximate Homomorphic Encryption</a></i> (<a href="slides/2025_fhesorting_slides.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=ea066flbddU&t=41s">video</a>, <a href="#RLB25">paper</a>)</li>
 
   </ul>
 <hr>
