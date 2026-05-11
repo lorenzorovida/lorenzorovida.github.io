@@ -263,13 +263,13 @@ a.no-style {
    <nav>
   <a href="#bio">bio</a> |
   <a href="#publications">publications</a> | 
-  <a href="#talks">talks</a>
+  <a href="#talks">talks/slides</a>
   <!--<a href="#cv">cv</a>-->
 </nav>
-<h2>Lorenzo Rovida</h2>
+<h2 style="font-size: 1.2rem;">Lorenzo Rovida</h2>
   <div class="icon-list">
     <div><i class="fas fa-book fa-fw" style="color: black; font-size:11px"></i> Post-doctoral researcher</div>
-    <div><i class="fas fa-home fa-fw" style="color: black; font-size:11px"></i> Politecnico di Torino</div>
+    <div><i class="fas fa-home fa-fw" style="color: black; font-size:11px"></i> Polytechnic University of Turin</div>
     <div><i class="fas fa-envelope fa-fw" style="color: black; font-size:11px"></i> name.surname @ {polito, outlook}.it</div>
   </div>
   </div>
@@ -279,11 +279,15 @@ a.no-style {
   </div>
 <hr>
 <h3 id="bio">Bio</h3>
-<i>Hi! My name is</i> Lorenzo and I am currently a post-doctoral researcher in the <a href="https://crypto.polito.it" class="no-style">CrypTo</a> group of cryptography and number theory at Politecnico di Torino, in Italy. 
+<i>Hi! My name is</i> Lorenzo and I am currently a post-doctoral researcher in the <a href="https://crypto.polito.it" class="no-style">CrypTo</a> group of cryptography and number theory at Polytechnic University of Turin, in Italy. 
 <br><br>
+Consider this page as a repository of various material: abstracts, papers, codes, slides and more :)
+<br>
+<br>
 My primary research fields are <b>fully homomorphic encryption</b> (FHE) and <b>lattice-based cryptography</b>.
 I like to work on FHE from both an algorithmic point of view, like designing encrypted circuits (from sorting to machine learning) and a construction point of view, namely building FHE schemes using lattices.
-<br><br>
+<br>
+<br>
 <!--During my Ph.D.,  I have been extremely lucky to be hosted by some cool people: Wessel van Woerden at the <a href="https://www.math.u-bordeaux.fr/fr/" class="no-style">Institut de Mathématiques de Bordeaux</a>, and Frederik Vercauteren at <a href="https://www.esat.kuleuven.be/cosic/" class="no-style">COSIC, KU Leuven</a>.
 <br>
 <br>-->
@@ -375,64 +379,65 @@ I like to work on FHE from both an algorithmic point of view, like designing enc
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<p style="font-size: 10pt;">Fig.1: Fully homomorphic encryption, explained in few cartoons, by Alice and Bob<br>(credits: Francesca V.)</p>
+<p style="font-size: 10pt;">Fig. 1: Fully homomorphic encryption, explained in few cartoons, by Alice and Bob<br>(credits: Francesca V.)</p>
 </center>
 
 <br>
 <hr>
-<h3 id="publications">Publications</h3> <p style="font-size: 9pt">(updated March, 31st)</p>
+<h3 id="publications">Publications</h3> <p style="font-size: 9pt">(updated May, 11st)</p>
 <h4>2026</h4>
 <ul>
-  <li><b>A Flexible and Polynomial Framework for Integer Arithmetic in CKKS</b> 
+
+  <li id="Rov26"><b>A flexible and polynomial framework for integer arithmetic in CKKS</b> 
   <br>L. Rovida
   <br><i>Preprint</i> 
-  <br>(<a href="https://ia.cr/2026/450">ePrint 2026/450</a>, <a href="papers/2026_integerckks.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/flexible-integer-arithmetic-ckks">code</a>)</li>
+  <br>(<a href="https://ia.cr/2026/450">ePrint 2026/450</a>, <a href="papers/2026_integerckks.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/flexible-integer-arithmetic-ckks">code</a>, <a href="#Rov26talk">talk</a>)</li>
   
-  <li><b>Homomorphic Encryption: new Constructions and Algorithms</b>
+  <li><b>Homomorphic encryption: new constructions and algorithms</b>
   <br>L. Rovida
   <br><i>Ph.D. thesis, University of Milano-Bicocca</i> 
   <br>(<a href="papers/2026_thesis.pdf">pdf</a>)</li>
   </ul>
 <h4>2025</h4>
 <ul>
-  <li><b>Beyond LWE: a Lattice Framework for Homomorphic Encryption</b> 
+  <li><b>Beyond LWE: a lattice framework for homomorphic encryption</b> 
   <br>A. Leporati, L. Rovida and W. van Woerden
   <br><i>Preprint</i> 
   <br>(<a href="https://ia.cr/2025/1171">ePrint 2025/1171</a>, <a href="papers/2025_beyondlwe.pdf">pdf</a>)</li>
   
-  <li id="RLB25"><b>Lightweight Sorting in Approximate Homomorphic Encryption</b>
+  <li id="RLB25"><b>Lightweight sorting in approximate homomorphic encryption</b>
   <br>L. Rovida, A. Leporati and S. Basile 
-  <br><i>(To appear) Communications in Cryptology</i> 
-  <br>(<a href="https://ia.cr/2025/1150">ePrint 2025/1150</a>, <a href="papers/2025_fhesorting.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/Lightweight-Sorting-In-Approximate-Homomorphic-Encryption">code</a>, <a href="#RLB25talk">talk</a>)</li>
+  <br><i>Communications in Cryptology</i> 
+  <br>(<a href="https://doi.org/10.62056/a3ksdkmol">doi</a>, <a href="https://ia.cr/2025/1150">ePrint 2025/1150</a>, <a href="papers/2025_fhesorting.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/Lightweight-Sorting-In-Approximate-Homomorphic-Encryption">code</a>, <a href="#RLB25talk">talk</a>)</li>
   
-  <li><b>An Evolutionary Approach to the Design of Spiking Neural P Circuits</b> 
+  <li><b>An evolutionary approach to the design of spiking neural P circuits</b> 
   <br>A. Leporati and L. Rovida
   <br><i>Journal of Membrane Computing</i>
   <br> (<a href="https://doi.springer.com/article/10.1007/s41965-024-00180-x">doi</a>, <a href="papers/2025_evolutionary.pdf">pdf</a>, <a href="https://github.com/alepo42/Spiking-Neural-Evolution">code</a>)</li>
   
-  <li><b>Looking for Stability in Proof-of-Stake based Consensus Mechanisms</b>
+  <li><b>Looking for stability in proof-of-stake based consensus mechanisms</b>
   <br>A. Leporati and L. Rovida
   <br><i>Blockchain: Research and Applications</i>
   <br> (<a href="https://doi.org/10.1016/j.bcra.2024.100222">doi</a>, <a href="papers/2025_stabilitypos.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/PoS-Simulator">code</a>)</li>
 </ul>
 <h4>2024</h4>
 <ul>
-  <li><b>Transformer-based Language Models and Homomorphic Encryption: An Intersection with BERT-tiny</b>
+  <li id="RL24b"><b>Transformer-based language models and homomorphic encryption: an intersection with BERT-tiny</b>
   <br>L. Rovida and A. Leporati, 
-  <br><i>10th ACM International Workshop on Security and Privacy Analytics</i>
-  <br>(<a href="https://doi.org/10.1145/3643651.3659893">doi</a>, <a href="papers/2024_fhebert.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/FHE-BERT-Tiny">code</a>) + (<a href="slides/2024_fhebert_slides.pdf">slides</a> used at <a href="https://sites.google.com/view/iwspa-2024/?pli=1">IWSPA '24</a> workshop at ACM CODASPY '24) </li>
+  <br><i>International Workshop on Security and Privacy Analytics</i>
+  <br>(<a href="https://doi.org/10.1145/3643651.3659893">doi</a>, <a href="papers/2024_fhebert.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/FHE-BERT-Tiny">code</a>, <a href="#RL24bslides">talk</a>) </li>
  
-  <li><b>Encrypted Image Classification with Low Memory Footprint Using Fully Homomorphic Encryption</b>
+  <li id="RL24"><b>Encrypted image classification with low memory footprint using fully homomorphic encryption</b>
   <br>L. Rovida and A. Leporati
   <br><i>International Journal of Neural Systems</i>
-  <br> (<a href="https://ia.cr/2024/460">ePrint 2024/460</a>, <a href="https://doi.org/10.1142/S0129065724500254">doi</a>, <a href="papers/2024_fheresnet.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/LowMemoryFHEResNet20">code</a>) + (<a href="slides/2024_fheresnet_slides.pdf">slides</a> used at <a href="https://aicrypt2024.aisylab.com">AICrypt '24</a> workshop at EUROCRYPT '24) </li>
+  <br> (<a href="https://doi.org/10.1142/S0129065724500254">doi</a>, <a href="https://ia.cr/2024/460">ePrint 2024/460</a>, <a href="papers/2024_fheresnet.pdf">pdf</a>, <a href="https://github.com/lorenzorovida/LowMemoryFHEResNet20">code</a>, <a href="#RL24slides">talk</a>)</li>
 </ul>
 <h4>2023</h4>
 <ul>
-    <li><b>Fast but Approximate Homomorphic k-means Based on Masking Technique</b>
+    <li id="Rov23"><b>Fast but approximate homomorphic k-means based on masking technique</b>
     <br>L. Rovida
     <br><i>International Journal of Information Security </i>
-    <br>(<a href="https://doi.org/10.1007/s10207-023-00708-9">doi</a>, <a href="papers/2023_fhekmeans.pdf">pdf</a>) + (<a href="slides/2023_fhekmeans_slides.pdf">slides</a> used at <a href="https://aicrypt2023.aisylab.com">AICrypt '23</a> workshop at EUROCRYPT '24)  </li>
+    <br>(<a href="https://doi.org/10.1007/s10207-023-00708-9">doi</a>, <a href="papers/2023_fhekmeans.pdf">pdf</a>, <a href="#Rov23slides">talk</a>)  </li>
 </ul>
 <h4>2020</h4>
 <ul>
@@ -444,14 +449,16 @@ I like to work on FHE from both an algorithmic point of view, like designing enc
 
 <br>
 <hr>
-<h3 id="talks">Some talks</h3> <p style="font-size: 9pt">(updated March, 20th)</p>
+<h3 id="talks">Some talks and slides</h3> <p style="font-size: 9pt">(updated May, 11st)</p>
 <h4>2026</h4>
 <ul style="list-style:initial; list-style-position: inside;
     padding:10px;
     margin:0px;
 ">
 
-    <li>(Upcoming) May, 9th @ Sapienza University (for <a href="https://aicrypt2026.aisylab.com/">AICrypt '26</a>) - <i><a class="no-style" href="">Somewhat efficient blind recommender system for the MovieLens dataset</a></i> (<a href="abstracts/2026_recommendersystem.pdf">abstract</a>, slides wip) </li>
+    <li>May, 9th @ Sapienza University (AICrypt '26 workshop) - <i><a class="no-style" href="">Somewhat efficient blind recommender system for the MovieLens dataset</a></i> (<a href="abstracts/2026_recommendersystem.pdf">abstract</a>, <a href="https://github.com/lorenzorovida/Lightweight-Sorting-In-Approximate-Homomorphic-Encryption/tree/recommender-system">code</a>, <a href="slides/2026_recommender.pdf">slides</a>) </li>
+
+    <li>Apr, 28th @ Technology Innovation Institute (TII) (Remote) - <i><a class="no-style" href="">Language models in FHE: from BERT-tiny to new challenges</a></i> (<a href="slides/2026_llmsfhe.pdf">slides</a>, <a href="#RL24b">paper</a>) </li>
 
   </ul>
 <h4>2025</h4>
@@ -460,14 +467,33 @@ I like to work on FHE from both an algorithmic point of view, like designing enc
     margin:0px;
 ">
 
-    <li>Sept, 23rd @ Politecnico di Torino - <i><a class="no-style" href="https://crypto.polito.it/notizie/seminario_how_to_build_a_homomorphic_encryption_scheme_using_lattices_from_scratch_lorenzo_rovida">(Tutorial) How to build a (fully) homomorphic encryption scheme using lattices, from scratch</a></i> (<a href="slides/2025_howto.pdf">slides</a>) </li>
+    <li>Sept, 23rd @ Polytechnic University of Turin - <i><a class="no-style" href="https://crypto.polito.it/notizie/seminario_how_to_build_a_homomorphic_encryption_scheme_using_lattices_from_scratch_lorenzo_rovida">(Tutorial) How to build a (fully) homomorphic encryption scheme using lattices, from scratch</a></i> (<a href="slides/2025_howto.pdf">slides</a>) </li>
 
-    <li>Sept, 12th @ University of Roma Tre (for <a href="https://aleph.fbk.eu/events/TAC2025/">TAC25</a>) - <i>Exploring blind signatures under FHE by combining GBFV and HAWK</i> (<a href="abstracts/2025_blindsignatures.pdf">abstract</a>, <a href="slides/2025_tac.pdf">slides</a>)</li>
+    <li>Sept, 12th @ University of Roma Tre (TAC '25 workshop) - <i>Exploring blind signatures under FHE by combining GBFV and HAWK</i> (<a href="abstracts/2025_blindsignatures.pdf">abstract</a>, <a href="slides/2025_tac.pdf">slides</a>)</li>
 
     <li>Sept, 5th @ USI, Cryptography and Quantum Information group - <i>(Tutorial) How to build a (fully) homomorphic encryption scheme using lattices, from scratch</i> (<a href="slides/2025_howto.pdf">slides</a>) </li>
 
-    <li id="RLB25talk">June, 17th @ COSIC, KU Leuven - <i><a class="no-style" href="https://www.esat.kuleuven.be/cosic/cosicevent/cosic-seminar-towards-lightweight-sorting-in-approximate-homomorphic-encryption-lorenzo-rovida-university-of-milano-bicocca/">Lightweight Sorting in Approximate Homomorphic Encryption</a></i> (<a href="slides/2025_fhesorting_slides.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=ea066flbddU&t=41s">video</a>, <a href="#RLB25">paper</a>)</li>
+    <li id="RLB25talk">June, 17th @ COSIC, KU Leuven - <i><a class="no-style" href="https://www.esat.kuleuven.be/cosic/cosicevent/cosic-seminar-towards-lightweight-sorting-in-approximate-homomorphic-encryption-lorenzo-rovida-university-of-milano-bicocca/">Lightweight sorting in approximate homomorphic encryption</a></i> (<a href="slides/2025_fhesorting_slides.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=ea066flbddU&t=41s">video</a>, <a href="#RLB25">paper</a>)</li>
 
+  </ul>
+
+<h4>2024</h4>
+<ul style="list-style:initial; list-style-position: inside;
+    padding:10px;
+    margin:0px;
+">
+
+    <li id="RL24bslides">June, 21st @ University of Porto (IWSPA '24 workshop) - <i>Transformer-based language models and homomorphic encryption: an intersection with BERT-tiny</i> (<a href="#RL24b">paper</a>, <a href="slides/2024_fhebert_slides.pdf">slides</a>) </li>
+    <li id="RL24aslides">May, 26th @ ETH Zurich (AICrypt '24 workshop) - <i>Encrypted image classification with low memory footprint using fully homomorphic encryptio</i> (<a href="#RL24">paper</a>, <a href="slides/2024_fheresnet_slides.pdf">slides</a>) </li>
+
+  </ul>
+<h4>2023</h4>
+<ul style="list-style:initial; list-style-position: inside;
+    padding:10px;
+    margin:0px;
+">
+
+    <li id="Rov23slides">April, 22nd @ ENS Lyon (AICrypt '23 workshop) - <i>Fast but approximate homomorphic k-means based on masking technique</i> (<a href="#Rov23">paper</a>, <a href="slides/2023_fhekmeans_slides.pdf">slides</a>) </li>
   </ul>
 <hr>
 <!---
