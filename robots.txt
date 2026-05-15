@@ -1,3 +1,36 @@
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Disallow: /
+
+# Google AI
+User-agent: Google-Extended
+Disallow: /
+
+# Meta AI
+User-agent: FacebookBot
+Disallow: /
+
+# Common Crawl (used to train many models)
+User-agent: CCBot
+Disallow: /
+
+# Apple
+User-agent: Applebot-Extended
+Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# Catch-all for remaining bots
 User-agent: *
 Disallow: /*.png$
 Disallow: /*.pdf$
